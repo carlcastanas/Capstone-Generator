@@ -24,7 +24,7 @@ function updateQuote(quoteNumber) {
     $(this).removeClass();
   });
 
-  $("#share").attr("href", "m.me/carlcastanas"" + encodeURIComponent($("#hidden").html(randomQuote.quote).text()) + "\" https://www.facebook.com/carlcastanas");
+ $("#share").attr("href", "https://twitter.com/intent/tweet?text=\"" + encodeURIComponent($("#hidden").html(randomQuote.quote).text()) + "\" carlcastanas" + quoteNumber);
 }
 
 function getRandomQuoteNumber() {
