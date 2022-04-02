@@ -5,8 +5,10 @@ body {
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
 }
-p, h1 {
-  overflow: hidden;
+@media screen and (max-width: 600px) {
+  h1, #paragraph {
+    display: none;
+  }
 }
 #particles-js
           {
