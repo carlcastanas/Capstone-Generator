@@ -1,3 +1,3 @@
 # Capstone Title Generator
-## **Carl Andrew Castañas**, popularly known as carlcastanas, created this capstone title generator. My idea for this modest project was for students who struggle to come up with a unique capstone subject.
+This capstone title generator was made by myself, **Carl Andrew Castanas**. This little project was created for students who are having trouble coming up with a distinctive capstone title. This capstone title generator will help you come up with the best capstone title while lowering your stress levels.
 ![image](https://raw.githubusercontent.com/carlcastanas/Capstone-Generator/main/capstone.png?token=GHSAT0AAAAAABTDRDGNWHNX64347N54TGWAYSRM3KA)
