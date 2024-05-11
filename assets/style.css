@@ -67,8 +67,16 @@ a:hover, a:focus, a:active {
 
 /* dark-theme.css */
 .swal2-popup {
-  background-color: #333;
-  color: #fff;
+  background: rgba( 0, 0, 0, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  color: #eeeef3;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transition: background 0.8s, color 0.8s;
+  line-height: 30px;
+  margin-top: 30px;
 }
 
 .swal2-title {
@@ -83,13 +91,35 @@ a:hover, a:focus, a:active {
   color: #fff;
 }
 
-.swal2-confirm,
 .swal2-cancel {
   color: #fff;
   background-color: #555;
 }
+.swal2-popup .swal2-confirm {
+  background: rgba(0, 0, 0, 0.536);
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 15px;
+  color: #eeeef3;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transition: background 0.8s, color 0.8s;
+  line-height: 30px;
+  margin-top: 30px;
+  padding: 5px 15px;
+}
 
-.swal2-confirm:hover,
+.swal2-popup .swal2-confirm:hover {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 25px;
+  color: #000000;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transition: background 0.8s, color 0.8s;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
 .swal2-cancel:hover {
   background-color: #777;
 }
