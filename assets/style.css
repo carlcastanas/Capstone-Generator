@@ -65,6 +65,35 @@ a:hover, a:focus, a:active {
   transition: color 0.8s;
 }
 
+/* dark-theme.css */
+.swal2-popup {
+  background-color: #333;
+  color: #fff;
+}
+
+.swal2-title {
+  color: #fff;
+}
+
+.swal2-content {
+  color: #fff;
+}
+
+.swal2-icon {
+  color: #fff;
+}
+
+.swal2-confirm,
+.swal2-cancel {
+  color: #fff;
+  background-color: #555;
+}
+
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+  background-color: #777;
+}
+
 .main-color {
   color: #eeeef3;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);

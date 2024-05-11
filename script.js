@@ -86,12 +86,49 @@ document.getElementById('copy-button').addEventListener('click', function() {
     var quoteText = document.getElementById('quote').innerText;
     navigator.clipboard.writeText(quoteText).then(function() {
       console.log('Text copied to clipboard: ' + quoteText);
-      alert('Text copied to clipboard: ' + quoteText);
+      // Display success message using SweetAlert
+      Swal.fire({
+        icon: 'success',
+        title: 'Text copied to clipboard!',
+        text: quoteText
+      });
     }, function(err) {
       console.error('Unable to copy text to clipboard: ', err);
-      alert('Unable to copy text to clipboard: ' + err);
+      // Display error message using SweetAlert
+      Swal.fire({
+        icon: 'error',
+        title: 'Unable to copy text to clipboard!',
+        text: err
+      });
     });
   });
+  document.getElementById('copy-button').addEventListener('click', function() {
+    var quoteText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(quoteText).then(function() {
+      console.log('Text copied to clipboard: ' + quoteText);
+      // Display success message using SweetAlert
+      Swal.fire({
+        icon: 'success',
+        title: 'Text copied to clipboard!',
+        text: quoteText,
+        customClass: {
+          popup: 'dark-mode'
+        }
+      });
+    }, function(err) {
+      console.error('Unable to copy text to clipboard: ', err);
+      // Display error message using SweetAlert
+      Swal.fire({
+        icon: 'error',
+        title: 'Unable to copy text to clipboard!',
+        text: err,
+        customClass: {
+          popup: 'dark-mode'
+        }
+      });
+    });
+  });
+    
   
 
 
