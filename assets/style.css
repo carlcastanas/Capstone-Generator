@@ -214,8 +214,15 @@ li {
   font-size: large;
   background-color: #181717;
   color: aliceblue;
-  position: absolute; /* Add this line to position the button */
+  position: absolute;
   bottom: 20px;
-  right: 20px; /* Adjust the horizontal position if needed */
-  transform: translateX(-50%); /* Center the button horizontally */
+  right: 20px;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border: 1px solid rgb(68, 68, 68); /* Thin white border */
+  cursor: pointer;
+  border-radius: 5px;
+}
+#copy-button:hover {
+  color: rgb(164, 251, 173);
 }
