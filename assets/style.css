@@ -104,8 +104,8 @@ a:hover, a:focus, a:active {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   transition: background 0.8s, color 0.8s;
   line-height: 30px;
-  margin-top: 30px;
   padding: 5px 15px;
+  
 }
 
 .swal2-popup .swal2-confirm:hover {
@@ -117,7 +117,6 @@ a:hover, a:focus, a:active {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   transition: background 0.8s, color 0.8s;
   line-height: 30px;
-  margin-top: 30px;
 }
 
 .swal2-cancel:hover {
