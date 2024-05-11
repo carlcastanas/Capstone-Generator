@@ -15,60 +15,6 @@ $(document).ready(function() {
     }
 });
 
-<<<<<<< HEAD
-=======
-$(document).ready(function() {
-    $(".menu-toggle").click(function() {
-      $(".nav-links").slideToggle(400);
-    });
-  
-    // Show/hide dropdown menu on mobile
-    $(".dropdown > a").click(function(e) {
-      e.preventDefault();
-      $(this).siblings(".dropdown-content").slideToggle(400);
-    });
-  
-    // Close dropdown menu when clicking outside
-    $(document).on("click", function(event) {
-      if (!$(event.target).closest(".dropdown").length) {
-        $(".dropdown-content").slideUp(400);
-      }
-    });
-  });
-  
-// Function to copy the dynamically generated quote
-function copyQuoteToClipboard() {
-    var quoteText = document.getElementById("quote").innerText;
-    
-    // Create a temporary textarea element
-    var tempTextArea = document.createElement("textarea");
-    tempTextArea.value = quoteText;
-    
-    // Append the textarea element to the body
-    document.body.appendChild(tempTextArea);
-    
-    // Select the text in the textarea
-    tempTextArea.select();
-    
-    // Execute the copy command
-    document.execCommand("copy");
-    
-    // Remove the textarea element
-    document.body.removeChild(tempTextArea);
-  }
-  
-  // Function to handle mouseenter event and copy the quote
-  function handleMouseEnter() {
-    // Call the function to copy the quote to clipboard
-    copyQuoteToClipboard();
-  }
-  
-  // Attach the event listener after the quote is generated
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("quote-box").addEventListener("mouseenter", handleMouseEnter);
-  });
-
->>>>>>> master
 function updateQuote(quoteNumber) {
     var randomQuote = quotes[quoteNumber];
 
@@ -85,22 +31,6 @@ function getRandomQuoteNumber() {
     return Math.floor(Math.random() * quotes.length);
 }
 
-<<<<<<< HEAD
-=======
-document.getElementById('copy-button').addEventListener('click', function() {
-    var quoteText = document.getElementById('quote').innerText;
-    navigator.clipboard.writeText(quoteText).then(function() {
-      console.log('Text copied to clipboard: ' + quoteText);
-      alert('Text copied to clipboard: ' + quoteText);
-    }, function(err) {
-      console.error('Unable to copy text to clipboard: ', err);
-      alert('Unable to copy text to clipboard: ' + err);
-    });
-  });
-  
-
-
->>>>>>> master
 var quotes = [{
         "author": "Carl Andrew Castañas",
         "quote": "Online E-Learning System"
