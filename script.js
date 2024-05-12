@@ -75,7 +75,7 @@ function updateQuote(quoteNumber) {
         $(this).removeClass();
     });
 
-    $("#share").attr("href", "fb-messenger://share/?link=&app_id=&text=" + encodeURIComponent($("#hidden").html(randomQuote.quote).text()) + "\" carlcastanas" + quoteNumber);
+    $("#share").attr("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent($("#hidden").html(randomQuote.quote).text()) + "\" carlcastanas" + quoteNumber);
 }
 
 function getRandomQuoteNumber() {
